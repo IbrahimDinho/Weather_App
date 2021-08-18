@@ -34,10 +34,23 @@
 
     <ListView
         android:id="@+id/lv_weatherReports"
-        android:layout_width="409dp"
-        android:layout_height="670dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_todaysWeather" />
+
+    <EditText
+        android:id="@+id/view_todaysWeather"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:focusable="false"
         app:layout_constraintTop_toBottomOf="@+id/et_dataInput" />
 </androidx.constraintlayout.widget.ConstraintLayout>
