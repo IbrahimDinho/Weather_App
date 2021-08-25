@@ -49,10 +49,11 @@ public class WeatherReportModel {
     @Override
     public String toString() {
         return
-                 "weather_state_name='" + weather_state_name + '\'' +
-                ", date='" + date + '\'' +
-                ", the_temp=" + the_temp
-                ;
+                date + "\n"
+                 + the_temp + " °C" + "\n"
+                + weather_state_name ;
+
+
     }
 
     public int getId() {
