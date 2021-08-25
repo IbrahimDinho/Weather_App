@@ -1,5 +1,7 @@
 package com.IbrahimE.weather;
 
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -14,6 +16,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+//    String Location_provider = LocationManager.GPS_PROVIDER;
+//    LocationManager locationManager;
+//    LocationListener locationListener;
     //widgets
     EditText et_dataInput;
     Button btn_getWeather;
